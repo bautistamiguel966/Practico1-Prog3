@@ -10,21 +10,99 @@
 <body>
     <header>
         <figure>
-            <img src="./assets/img/logo_consultorio.png" alt="Logo del gimnasio">
+            <img id="logo" src="./assets/img/logo_consultorio.png" alt="Logo del gimnasio">
         </figure>
         <nav>
+            <h2>Consultorio CENT 35</h2>
             <ul>
-                <li>Inicio</li>
-                <li>Rutinas</li>
-                <li>Contacto</li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Servicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Turno</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section>
+            <figure>
+                <img id="banner" src="./assets/img/centro-medico-e1620819797482.jpg" alt="banner">
+            </figure>
+            <table style="border: 2px solid red;">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>Descripcion</th>
+                        <th>Mas info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rayos X</td>
+                        <td><img src="./assets/img/servicio1.png" alt="Rayox X"></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?</td>
+                        <td><a href="">Mas info</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td><img src="./assets/img/servicio2.png" alt="Pediatria"></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?</td>
+                        <td><a href="">Mas info</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cirugia</td>
+                        <td><img src="./assets/img/servicio3.png" alt="Pediatria"></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?</td>
+                        <td><a href="">Mas info</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="">
+                <label for="nombre">Nombre <input id="nombre" type="text"></label>
+                <label for="apellido">Apellido <input id="apellido" type="text"></label>
+                <label for="email">Correo Electronico <input id="email" type="email"></label>
+                <label for="comentario">Comentario 
+                    <textarea name="" id="comentario" cols="30" rows="5"></textarea>
+                </label>
+                <input type="submit">
+                
+            </form>
+        </section>
+        <!-- <section></section> -->
+        <!-- <aside style="background-color: bisque;"><h2>Hola</h2></aside> -->
+        <section>
+            <h2>Turnos</h2>
+            <table style="border: 2px solid red;">
+                <thead>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
 
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00 - 9:00</td>
+                        <td>9:00 - 10:00</td>
+                        <td>10:00 - 11:00</td>
+                        <td>11:00 - 12:00</td>
+                        <td>12:00 - 13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
-
+        <p>Telefono</p>
+        <p>email</p>
+        <p>otra cosa</p>
     </footer>
 </body>
 </html>
