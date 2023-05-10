@@ -1,6 +1,180 @@
-img{
+/* Reset HTML */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header y sus elementos */
+
+header{
+    display: flex;
+    background-color: #0582ca;
+    justify-content: space-around;
+}
+h1{
+    align-self: center;
+    color: #ffffff;
+}
+nav{
+    display: flex;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-content: flex-end;
+    align-self: center;
+    gap: 5%;
+    font-size: 22px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    width: 30px;
+}
+li a:hover{
+    background-color: #0b5f90;
+    border-radius: 30%;
+}
+#logo{
     width: 100px;
+    display: flex;
+    align-self: flex-start;
 }
-#banner{
-    width: 700px;
+
+img{
+    /* width: 100px; */
+    width: 100%;
+    height: 100%;
 }
+
+/* Seccion 1 */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seccion1, #seccion4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cfecf9;
+}
+#div-banner{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/centro-medico-e1620819797482.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+#tabla-servicios, #tabla-profesionales{
+    border: 2px solid grey;
+    width: 65%;
+    background-color: #3f76a9;
+    /* color: #ffffff; */
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.t-nombre{
+    width: 10%;
+    font-size: 20px;
+}
+.t-img{
+    width: 20%;
+}
+.t-descripcion{
+    width: 50%;
+    font-size: 18px;
+}
+.t-info{
+    width: 15%;
+    font-size: 18px;
+}
+tr{
+    display: flex;
+    align-items: center;
+}
+td{
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+/* Seccion 2 - Formulario */
+
+#seccion2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cfecf9;
+}
+
+form{
+    margin: 3%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+form input{
+    display: flex;
+    width: 100%;
+    margin-top: 1%;
+    padding: 1%;
+}
+textarea{
+    margin-top: 2%;
+}
+input[type="submit"]{
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+/* Seccion 3 - Turnos */
+#seccion3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cfecf9;
+}
+#tabla-turnos{
+    width: 35%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#tabla-turnos thead tr{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3px;
+}
+
+#tabla-turnos tbody tr{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3px;
+    justify-content: center;
+}
+/* Seccion 4  */
+/* #tabla-profesionales{
+    margin-top: 3%;
+    margin-bottom: 3%;
+} */
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #0582ca;
+    color: #ffffff;
+    gap: 3%;
+}
+
+

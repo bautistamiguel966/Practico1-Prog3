@@ -12,70 +12,64 @@
         <figure>
             <img id="logo" src="./assets/img/logo_consultorio.png" alt="Logo del gimnasio">
         </figure>
+        <h1>Consultorio CENT 35</h1>
         <nav>
-            <h2>Consultorio CENT 35</h2>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Servicio</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Turno</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#seccion1">Servicio</a></li>
+                <li><a href="#seccion2">Contacto</a></li>
+                <li><a href="#seccion3">Turno</a></li>
+                <li><a href="#seccion4">Profesionales</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <figure>
-                <img id="banner" src="./assets/img/centro-medico-e1620819797482.jpg" alt="banner">
+        <section id="seccion1">
+            <figure id="div-banner">
+                <!-- <img id="banner" src="./assets/img/centro-medico-e1620819797482.jpg" alt="banner"> -->
             </figure>
-            <table style="border: 2px solid red;">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Imagen</th>
-                        <th>Descripcion</th>
-                        <th>Mas info</th>
-                    </tr>
-                </thead>
+            <h2>Servicios</h2>
+            <table id="tabla-servicios">
                 <tbody>
                     <tr>
-                        <td>Rayos X</td>
-                        <td><img src="./assets/img/servicio1.png" alt="Rayox X"></td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?</td>
-                        <td><a href="">Mas info</a></td>
+                        <td class="t-nombre">Rayos X</td>
+                        <td class="t-img"><img src="./assets/img/servicio1.png" alt="Rayox X"></td>
+                        <td class="t-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat consequuntur sequi doloremque autem recusandae et libero excepturi accusantium quaerat molestias!</td>
+                        <td class="t-info"><a href="">Mas info</a></td>
                     </tr>
                     <tr>
-                        <td>Pediatria</td>
-                        <td><img src="./assets/img/servicio2.png" alt="Pediatria"></td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?</td>
-                        <td><a href="">Mas info</a></td>
+                        <td class="t-nombre">Pediatria</td>
+                        <td class="t-img"><img src="./assets/img/servicio2.png" alt="Pediatria"></td>
+                        <td class="t-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit neque ea praesentium sequi unde sapiente sunt nesciunt qui fuga!</td>
+                        <td class="t-info"><a href="">Mas info</a></td>
                     </tr>
                     <tr>
-                        <td>Cirugia</td>
-                        <td><img src="./assets/img/servicio3.png" alt="Pediatria"></td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?</td>
-                        <td><a href="">Mas info</a></td>
+                        <td class="t-nombre">Cirugia</td>
+                        <td class="t-img"><img src="./assets/img/servicio3.png" alt="Pediatria"></td>
+                        <td class="t-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rem ab dolorum blanditiis quia dicta perferendis fuga quo minima molestias.</td>
+                        <td class="t-info"><a href="">Mas info</a></td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section>
+        <section id="seccion2">
             <h2>Formulario de Contacto</h2>
             <form action="">
                 <label for="nombre">Nombre <input id="nombre" type="text"></label>
                 <label for="apellido">Apellido <input id="apellido" type="text"></label>
                 <label for="email">Correo Electronico <input id="email" type="email"></label>
-                <label for="comentario">Comentario 
+                <!-- <label for="comentario">Comentario 
                     <textarea name="" id="comentario" cols="30" rows="5"></textarea>
-                </label>
-                <input type="submit">
+                </label> -->
+                <textarea name="" id="comentario" cols="30" rows="5" placeholder="Comentario"></textarea>
+                <input type="submit" value="Enviar">
                 
             </form>
         </section>
-        <!-- <section></section> -->
-        <!-- <aside style="background-color: bisque;"><h2>Hola</h2></aside> -->
-        <section>
+
+        <section id="seccion3">
             <h2>Turnos</h2>
-            <table style="border: 2px solid red;">
+            <table id="tabla-turnos" style="border: 2px solid grey;">
                 <thead>
                     <tr>
                         <th>Lunes</th>
@@ -98,11 +92,36 @@
                 </tbody>
             </table>
         </section>
+        <section id="seccion4">
+            <h2>Profesionales</h2>
+            <table id="tabla-profesionales">
+                <tbody>
+                    <tr>
+                        <td class="t-nombre">Juan Perez</td>
+                        <td class="t-img"><img src="./assets/img/doctor1.png" alt="Doctor 1"></td>
+                        <td class="t-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat consequuntur sequi doloremque autem recusandae et libero excepturi accusantium quaerat molestias!</td>
+                        <td class="t-info"><a href="">Mas info</a></td>
+                    </tr>
+                    <tr>
+                        <td class="t-nombre">Micaela Vega</td>
+                        <td class="t-img"><img src="./assets/img/doctor2.jpg" alt="Doctor 2"></td>
+                        <td class="t-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit neque ea praesentium sequi unde sapiente sunt nesciunt qui fuga!</td>
+                        <td class="t-info"><a href="">Mas info</a></td>
+                    </tr>
+                    <tr>
+                        <td class="t-nombre">Franco Diaz</td>
+                        <td class="t-img"><img src="./assets/img/doctor3.jpg" alt="Doctor 3"></td>
+                        <td class="t-descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, temporibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rem ab dolorum blanditiis quia dicta perferendis fuga quo minima molestias.</td>
+                        <td class="t-info"><a href="">Mas info</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
-        <p>Telefono</p>
-        <p>email</p>
-        <p>otra cosa</p>
+        <p>+54 2964 626262</p>
+        <p>Cent35@salud.com</p>
+        </p>© CENT 35</p>
     </footer>
 </body>
 </html>
